@@ -19,6 +19,7 @@ API Endpoint: POST http://localhost:3001/forecast
 ## Sample Request:
 
 json
+
 {
     "location": "Los Angeles, CA, US"
 }
@@ -26,6 +27,7 @@ json
 ## Sample Response:
 
 json
+
 {
     "result": {
         "day1": "Get ready for a scorching game day with a temperature of 59°F and clear skies in Los Angeles!",
@@ -50,7 +52,9 @@ npm install
 ## Create a .env file in the root directory:
 
 OPENAI_API_KEY=your_openai_api_key_here
+
 WEATHER_API_KEY=your_openweather_api_key_here
+
 WEATHER_BASE_URL=https://api.openweathermap.org
 
 ## Build and start the server:
@@ -68,10 +72,13 @@ npm or yarn
 Endpoint: /forecast
 
 Method: POST
+
 Content-Type: application/json
+
 Body:
 
 json
+
 {
     "location": "city_name"
 }
@@ -79,7 +86,9 @@ json
 ## Example using curl:
 
 curl -X POST http://localhost:3001/forecast \
+
 -H "Content-Type: application/json" \
+
 -d '{"location":"New York, NY"}'
 
 ## Example using Postman:
@@ -87,12 +96,16 @@ curl -X POST http://localhost:3001/forecast \
 Create new POST request
 
 URL: http://localhost:3001/forecast
+
 Body: raw, JSON
+
 Enter the location JSON
+
 Send request
 
-# Project Structure
+## Project Structure
 
+```bash
 CopyWeather-Forecast-Advanced/
 ├── src/
 │   └── server.ts             # Main server file
@@ -101,36 +114,56 @@ CopyWeather-Forecast-Advanced/
 ├── package.json              # Project dependencies
 ├── tsconfig.json             # TypeScript configuration
 └── README.md                 # Project documentation
+```
 
 # Technologies Used
 
 TypeScript
+
 Node.js
+
 Express.js
+
 OpenAI API
+
 OpenWeather API
+
 LangChain
+
 Zod for validation
 
 # Environment Variables
 
-Required environment variables:
+## Required environment variables:
+
 envCopyOPENAI_API_KEY=    # Your OpenAI API key
+
 WEATHER_API_KEY=          # Your OpenWeather API key
+
 WEATHER_BASE_URL=         # OpenWeather API base URL
-Error Handling
+
+## Error Handling
+
 The API returns appropriate error messages for:
 
 Missing location
+
 Invalid API keys
+
 Location not found
+
 API rate limits
+
 Server errors
 
 # Contributing
 
 Fork the repository
+
 Create a feature branch
+
 Commit changes
+
 Push to the branch
+
 Create a Pull Request
