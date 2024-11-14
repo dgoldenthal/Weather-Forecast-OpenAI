@@ -18,15 +18,11 @@ API Endpoint: POST http://localhost:3001/forecast
 
 ## Sample Request:
 
-json
-
 {
     "location": "Los Angeles, CA, US"
 }
 
 ## Sample Response:
-
-json
 
 {
     "result": {
@@ -77,7 +73,6 @@ Content-Type: application/json
 
 Body:
 
-json
 
 {
     "location": "city_name"
