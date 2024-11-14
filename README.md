@@ -18,12 +18,15 @@ API Endpoint: POST http://localhost:3001/forecast
 
 ## Sample Request:
 
-jsonCopy{
+json
+{
     "location": "Los Angeles, CA, US"
 }
 
 ## Sample Response:
-jsonCopy{
+
+json
+{
     "result": {
         "day1": "Get ready for a scorching game day with a temperature of 59°F and clear skies in Los Angeles!",
         "day2": "The action continues with a temperature of 58°F and some broken clouds rolling in for day two!",
@@ -37,22 +40,22 @@ jsonCopy{
 
 ## Clone the repository:
 
-bashCopygit clone https://github.com/yourusername/weather-forecast-advanced.git
+git clone https://github.com/yourusername/weather-forecast-advanced.git
 cd weather-forecast-advanced
 
 ## Install dependencies:
 
-bashCopynpm install
+npm install
 
 ## Create a .env file in the root directory:
 
-envCopyOPENAI_API_KEY=your_openai_api_key_here
+OPENAI_API_KEY=your_openai_api_key_here
 WEATHER_API_KEY=your_openweather_api_key_here
 WEATHER_BASE_URL=https://api.openweathermap.org
 
 ## Build and start the server:
 
-bashCopynpm start
+npm start
 Prerequisites
 
 Node.js (v18 or higher)
@@ -68,13 +71,14 @@ Method: POST
 Content-Type: application/json
 Body:
 
-jsonCopy{
+json
+{
     "location": "city_name"
 }
 
 ## Example using curl:
 
-bashCopycurl -X POST http://localhost:3001/forecast \
+curl -X POST http://localhost:3001/forecast \
 -H "Content-Type: application/json" \
 -d '{"location":"New York, NY"}'
 
