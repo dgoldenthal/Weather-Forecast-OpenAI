@@ -14,7 +14,7 @@ Geocoding support for worldwide locations
 
 # Demo
 
-API Endpoint: POST http://localhost:3001/forecast
+API Endpoint: POST [http://localhost:3001/forecast]
 
 ## Sample Request:
 
@@ -24,6 +24,7 @@ API Endpoint: POST http://localhost:3001/forecast
 
 ## Sample Response:
 
+```bash
 {
     "result": {
         "day1": "Get ready for a scorching game day with a temperature of 59°F and clear skies in Los Angeles!",
@@ -34,11 +35,13 @@ API Endpoint: POST http://localhost:3001/forecast
     }
 }
 
+```
+
 # Installation
 
 ## Clone the repository:
 
-git clone https://github.com/yourusername/weather-forecast-advanced.git
+git clone [https://github.com/yourusername/weather-forecast-advanced.git]
 cd weather-forecast-advanced
 
 ## Install dependencies:
@@ -47,11 +50,11 @@ npm install
 
 ## Create a .env file in the root directory:
 
-OPENAI_API_KEY=your_openai_api_key_here
+OPENAI_API_KEY= My_openai_api_key
 
-WEATHER_API_KEY=your_openweather_api_key_here
+WEATHER_API_KEY= My_openweather_api_key
 
-WEATHER_BASE_URL=https://api.openweathermap.org
+WEATHER_BASE_URL= [https://api.openweathermap.org]
 
 ## Build and start the server:
 
@@ -73,14 +76,13 @@ Content-Type: application/json
 
 Body:
 
-
 {
     "location": "city_name"
 }
 
 ## Example using curl:
 
-curl -X POST http://localhost:3001/forecast \
+curl -X POST [http://localhost:3001/forecast]
 
 -H "Content-Type: application/json" \
 
@@ -90,7 +92,7 @@ curl -X POST http://localhost:3001/forecast \
 
 Create new POST request
 
-URL: http://localhost:3001/forecast
+URL: [http://localhost:3001/forecast]
 
 Body: raw, JSON
 
@@ -111,7 +113,7 @@ CopyWeather-Forecast-Advanced/
 └── README.md                 # Project documentation
 ```
 
-# Technologies Used
+## Technologies Used
 
 TypeScript
 
@@ -127,16 +129,6 @@ LangChain
 
 Zod for validation
 
-# Environment Variables
-
-## Required environment variables:
-
-envCopyOPENAI_API_KEY=    # Your OpenAI API key
-
-WEATHER_API_KEY=          # Your OpenWeather API key
-
-WEATHER_BASE_URL=         # OpenWeather API base URL
-
 ## Error Handling
 
 The API returns appropriate error messages for:
@@ -151,7 +143,7 @@ API rate limits
 
 Server errors
 
-# Contributing
+## Contributing
 
 Fork the repository
 
